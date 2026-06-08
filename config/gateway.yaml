@@ -1,0 +1,19 @@
+server:
+  host: 0.0.0.0
+  port: 8000
+
+logging:
+  level: INFO
+  format: json
+  redact_content: true
+
+observability:
+  tracing_enabled: false
+  metrics_enabled: false
+
+rag:
+  enabled: false
+
+agent:
+  enabled: false
+

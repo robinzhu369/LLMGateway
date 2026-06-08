@@ -1,0 +1,13 @@
+providers:
+  - name: mock
+    type: mock
+    base_url: ""
+    api_key_env: ""
+    timeout: 5
+
+  - name: openai
+    type: openai_compatible
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+    timeout: 60
+

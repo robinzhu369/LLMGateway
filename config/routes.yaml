@@ -1,0 +1,18 @@
+routes:
+  - alias: chat-fast
+    strategy: priority
+    targets:
+      - provider: mock
+        model: mock-chat
+        weight: 100
+  - alias: chat-smart
+    strategy: priority
+    targets:
+      - provider: mock
+        model: mock-chat-smart
+        weight: 100
+
+fallback:
+  max_retries: 0
+  retry_on: []
+  backoff_base_seconds: 0.5
